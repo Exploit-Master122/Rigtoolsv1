@@ -1,2 +1,5 @@
 # Rigtoolsv1
-A fake version of the Rigtools exploit that is based off Exthang3r
+Just download the HTML file or go to 
+```
+https://rigtoolss.playcode.io/
+```
