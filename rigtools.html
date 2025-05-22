@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Classes</title>
+  <style>
+    body {
+      background-color: #1e1b3a;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .extension-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .extension {
+      background-color: #2b2647;
+      padding: 16px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .extension .name {
+      max-width: 80%;
+    }
+
+    .toggle-switch {
+      position: relative;
+      width: 48px;
+      height: 24px;
+    }
+
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0;
+      right: 0; bottom: 0;
+      background-color: #3b375c;
+      transition: 0.4s;
+      border-radius: 24px;
+    }
+
+    .slider::before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: #f0d1ff;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+
+    .toggle-switch input:checked + .slider {
+      background-color: #a363e6;
+    }
+
+    .toggle-switch input:checked + .slider::before {
+      transform: translateX(24px);
+    }
+  </style>
+</head>
+<body>
+  <h2>RigTools v1 by Exploit-Master12</h2>
+  <div class="extension-list">
+    <div class="extension">
+      <div class="name">Lugus School</div>
+      <label class="toggle-switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="extension">
+      <div class="name">GoGuardian</div>
+      <label class="toggle-switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="extension">
+      <div class="name">Blocksi Enterprise Edition (1st ID)</div>
+      <label class="toggle-switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="extension">
+      <div class="name">Securly for Chromebooks (2nd ID)</div>
+      <label class="toggle-switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="extension">
+      <div class="name">Securly Classroom</div>
+      <label class="toggle-switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <script>
+    const checkboxes = document.querySelectorAll('.toggle-switch input');
+
+    checkboxes.forEach(box => {
+      box.addEventListener('click', () => {
+        window.open('https://github.com/Exploit-Master122/Extremov3r/tree/main', '_blank');
+      });
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Classes</title>
+  <style>
+    body {
+      background-color: #1e1b3a;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .extension-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .extension {
+      background-color: #2b2647;
+      padding: 16px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .extension .name {
+      max-width: 80%;
+    }
+
+    .toggle-switch {
+      position: relative;
+      width: 48px;
+      height: 24px;
+    }
+
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0;
+      right: 0; bottom: 0;
+      background-color: #3b375c;
+      transition: 0.4s;
+      border-radius: 24px;
+    }
+
+    .slider::before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: #f0d1ff;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+
+    .toggle-switch input:checked + .slider {
+      background-color: #a363e6;
+    }
+
+    .toggle-switch input:checked + .slider::before {
+      transform: translateX(24px);
+    }
+  </style>
+</head>
+<body>
+  <div class="extension-list">
+    <div class="extension">
+      <div class="name">Lugus School</div>
+      <label class="toggle-switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="extension">
+      <div class="name">GoGuardian</div>
+      <label class="toggle-switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="extension">
+      <div class="name">Blocksi Enterprise Edition (1st ID)</div>
+      <label class="toggle-switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="extension">
+      <div class="name">Securly for Chromebooks (3rd ID)</div>
+      <label class="toggle-switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="extension">
+      <div class="name">Deledao for Chromebooks (2nd ID)</div>
+      <label class="toggle-switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <script>
+    const checkboxes = document.querySelectorAll('.toggle-switch input');
+
+    checkboxes.forEach(box => {
+      box.addEventListener('click', () => {
+        window.open('https://github.com/Exploit-Master122/Extremov3r/tree/main', '_blank');
+      });
+    });
+  </script>
+</body>
+</html>
